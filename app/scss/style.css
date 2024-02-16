@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #323232;
+  font-size: 15px;
+  transition: 0.3s linear;
+}
+body section {
+  padding: 50px 0;
+}
+body .roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+body .roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+body .roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+body .roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+body .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body .roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+body .roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body .roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+body .roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+body .roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+body .roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+body .roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+.dark {
+  background-color: black;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1176px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.nav {
+  padding: 10px 0;
+}
+.nav .container .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .container .nav-menu .logo {
+  overflow: hidden;
+  width: 15%;
+}
+.nav .container .nav-menu .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nav .container .nav-menu .menu {
+  display: none;
+}
+@media (min-width: 992px) {
+  .nav .container .nav-menu .menu {
+    display: block;
+  }
+}
+.nav .container .nav-menu .menu ul {
+  display: flex;
+}
+.nav .container .nav-menu .menu ul li {
+  list-style: none;
+  padding: 0 50px;
+}
+.nav .container .nav-menu .bars {
+  display: block;
+}
+@media (min-width: 992px) {
+  .nav .container .nav-menu .bars {
+    display: none;
+  }
+}
+
+footer .container .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+@media (min-width: 992px) {
+  footer .container .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+footer .container .footer-content .footer-logo {
+  display: none;
+}
+@media (min-width: 992px) {
+  footer .container .footer-content .footer-logo {
+    display: block;
+  }
+}
+footer .container .footer-content .footer-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .container .footer-content .footer-smm {
+  display: flex;
+}
+footer .container .footer-content .footer-smm div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .container .footer-content .footer-text {
+  display: none;
+}
+@media (min-width: 992px) {
+  footer .container .footer-content .footer-text {
+    display: block;
+  }
+}
+
+.food-download {
+  background-color: #FAFAFA;
+  width: 100%;
+  padding: 50px 0;
+}
+@media (min-width: 992px) {
+  .food-download {
+    background-image: url("../../../public/image/Rectangle48.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.food-download .container .food-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.food-download .container .food-content h4 {
+  color: 737373;
+}
+@media (min-width: 992px) {
+  .food-download .container .food-content h4 {
+    color: #fff;
+  }
+}
+.food-download .container .food-content h1 {
+  font-size: 40px;
+  color: #252B42;
+  text-align: center;
+  padding: 20px 0;
+}
+@media (min-width: 992px) {
+  .food-download .container .food-content h1 {
+    color: #fff;
+  }
+}
+.food-download .container .food-content p {
+  color: #737373;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 0px 0 30px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .food-download .container .food-content p {
+    color: #fff;
+    text-align: left;
+  }
+}
+.food-download .container .food-content .dowload-app {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .food-download .container .food-content .dowload-app {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.food-download .container .food-content .dowload-app .playstore, .food-download .container .food-content .dowload-app .appstore {
+  padding: 10px 25px;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.food-download .container .food-content .dowload-app .appstore {
+  border: 1px solid #FA4A0C;
+  background-color: transparent;
+  color: #FA4A0C;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .food-download .container .food-content .dowload-app .appstore {
+    margin-left: 10px;
+    border: 1px solid #fff;
+  }
+}
+
+.app .container .app-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .container .app-image .img {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-bottom: 2px solid #E4E4E4;
+}
+@media (min-width: 992px) {
+  .app .container .app-image .img {
+    height: 640px;
+    width: 548px;
+    position: relative;
+  }
+}
+.app .container .app-image .img img {
+  position: absolute;
+  z-index: 1;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.app-account .container .how-app .app-header {
+  text-align: center;
+  padding: 50px 0 0px;
+}
+.app-account .container .how-app .app-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+@media (min-width: 992px) {
+  .app-account .container .how-app .app-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.app-account .container .how-app .app-content .app-img {
+  width: 100%;
+  height: 500px;
+}
+@media (min-width: 992px) {
+  .app-account .container .how-app .app-content .app-img {
+    width: 525px;
+    height: 500px;
+  }
+}
+.app-account .container .how-app .app-content .app-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app-account .container .how-app .app-content .app-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .app-account .container .how-app .app-content .app-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: left;
+  }
+}
+.app-account .container .how-app .app-content .app-text h3 {
+  color: #ff6b00;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.app-account .container .how-app .app-content .app-text h2 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.app-account .container .how-app .app-content .app-text p {
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.37);
+  line-height: 20px;
+}
+
+.app-shop .container .app-shop-explore {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+@media (min-width: 992px) {
+  .app-shop .container .app-shop-explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.app-shop .container .app-shop-explore .shop-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .app-shop .container .app-shop-explore .shop-content {
+    width: 50%;
+    text-align: left;
+  }
+}
+.app-shop .container .app-shop-explore .shop-content h3 {
+  color: #ff6b00;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.app-shop .container .app-shop-explore .shop-content h2 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.app-shop .container .app-shop-explore .shop-content p {
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.37);
+  line-height: 20px;
+}
+.app-shop .container .app-shop-explore .shop-img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .app-shop .container .app-shop-explore .shop-img {
+    width: 400px;
+    height: 500px;
+  }
+}
+.app-shop .container .app-shop-explore .shop-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.app-checkout .container .app-payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+@media (min-width: 992px) {
+  .app-checkout .container .app-payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.app-checkout .container .app-payment .payment-img {
+  width: 100%;
+  height: 500px;
+}
+@media (min-width: 992px) {
+  .app-checkout .container .app-payment .payment-img {
+    width: 400px;
+    height: 500px;
+  }
+}
+.app-checkout .container .app-payment .payment-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app-checkout .container .app-payment .payment-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .app-checkout .container .app-payment .payment-content {
+    width: 50%;
+    text-align: left;
+  }
+}
+.app-checkout .container .app-payment .payment-content h3 {
+  color: #ff6b00;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.app-checkout .container .app-payment .payment-content h2 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.app-checkout .container .app-payment .payment-content p {
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.37);
+  line-height: 20px;
+}
+
+.app-download {
+  background-color: #252B42;
+}
+.app-download .container .download-pay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.app-download .container .download-pay h2 {
+  color: #fff;
+}
+.app-download .container .download-pay p {
+  color: #BDBDBD;
+}
+.app-download .container .download-pay .pay-free button {
+  border: none;
+}
+.app-download .container .download-pay .pay-free .buy {
+  background-color: #FA4A0C;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 10px;
+}
+.app-download .container .download-pay .pay-free .free {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  margin-left: 10px;
+}/*# sourceMappingURL=style.css.map */

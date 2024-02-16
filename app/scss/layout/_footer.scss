@@ -1,0 +1,45 @@
+@import '../partials/mixin';
+footer{
+    .container{
+        .footer-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            @include breakpoint('large'){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .footer-logo{
+                display: none;
+                @include breakpoint('large'){
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .footer-smm{
+                display: flex;
+                
+                div{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .footer-text{
+                display: none;
+                @include breakpoint('large'){
+                    display: block;
+                }
+            }
+        }
+    }
+}

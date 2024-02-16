@@ -1,0 +1,179 @@
+@import '../partials/mixin';
+.app-account{
+    .container{
+        .how-app{
+            .app-header{
+                text-align: center;
+                padding: 50px 0 0px;
+            }
+            .app-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 50px;
+                @include breakpoint('large'){
+                display: flex;
+                flex-direction: row;
+                }
+                .app-img{
+                    width: 100%;
+                    height: 500px;
+                    @include breakpoint('large'){
+                    width: 525px;
+                    height: 500px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .app-text{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    @include breakpoint('large'){
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 50%;
+                        text-align: left;
+                        
+                        }
+                    h3{
+                        color: #ff6b00;
+                        padding: 30px 0;
+                        font-size: 18px;
+                      
+                    }
+                    h2{
+                        font-size: 40px;
+                        padding-bottom: 30px;
+                    }
+                    p{
+                        font-size: medium;
+                        color: rgba(0, 0, 0, 0.37);
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.app-shop{
+    .container{
+        .app-shop-explore{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            padding: 0 50px;
+            @include breakpoint('large'){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .shop-content{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 50px;
+                text-align: center;
+                @include breakpoint('large'){
+                    width: 50%;
+                    text-align: left;
+                }
+                h3{
+                    color: #ff6b00;
+                    padding: 30px 0;
+                    font-size: 18px;
+                    
+
+                }
+                h2{
+                    font-size: 40px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-size: medium;
+                    color: rgba(0, 0, 0, 0.37);
+                    line-height: 20px;
+                }
+            }
+            .shop-img{
+                width: 100%;
+                
+                @include breakpoint('large'){
+                    width: 400px;
+                    height: 500px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+.app-checkout{
+    .container{
+        .app-payment{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 50px;
+            @include breakpoint('large'){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .payment-img{
+                width: 100%;
+                height: 500px;
+                @include breakpoint('large'){
+                width: 400px;
+                height: 500px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .payment-content{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 50px;
+                text-align: center;
+                @include breakpoint('large'){
+                width: 50%;
+                text-align: left;
+                }
+                h3{
+                    color: #ff6b00;
+                    padding: 30px 0;
+                    font-size: 18px;
+
+                }
+                h2{
+                    font-size: 40px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-size: medium;
+                    color: rgba(0, 0, 0, 0.37);
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

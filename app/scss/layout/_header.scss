@@ -1,0 +1,45 @@
+@import '../partials/mixin';
+.nav{
+    padding: 10px 0;
+
+
+   
+    .container{
+        .nav-menu{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+           
+            .logo{
+                overflow: hidden;
+                width: 15%;
+                img{
+                    width:100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .menu{
+                display: none;
+                @include breakpoint('large'){
+
+                    display: block;
+                }
+                ul{
+                    display: flex;
+                    li{
+                        list-style: none;
+                        padding: 0 50px;
+                    }
+                }
+            }
+            .bars{
+                display: block;
+                @include breakpoint('large'){
+                    display: none;
+                }
+                
+            }
+        }
+    }
+   }
